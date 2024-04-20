@@ -1,5 +1,7 @@
 package Autonoma.Hospital.models;
 
+import Autonoma.Hospital.exceptions.ErrorMedicinaException;
+import Autonoma.Hospital.exceptions.ErrorPacienteSanoException;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -7,6 +9,7 @@ import java.util.Date;
  * Representa una cita médica realizada en la clínica.
  * 
  * @author Samuel David López Sarabia
+ * @author Abraham Velásquez
  * @version 1.0
  */
 public class Cita {
@@ -47,7 +50,7 @@ public class Cita {
      * @param medicamento El medicamento utilizado durante la cita.
      * @param enfermedad La enfermedad que se está tratando.
      */
-    public void curarPaciente(String idVenta, Medicamento medicamento, Enfermedad enfermedad){
+    public void curarPaciente(String idVenta, Medicamento medicamento, Enfermedad enfermedad) throws ErrorMedicinaException, ErrorPacienteSanoException {
         this.medicamentosUsados.add(medicamento);
         this.paciente.curarEnfermedad(medicamento, enfermedad);
         this.venta.sumarTotal();

@@ -3,6 +3,7 @@ package Autonoma.Hospital.models;
 /**
  *
  * @author Samuel David López Sarabia
+ * @author Abraham Velásquez
  */
 public class Gerente extends Empleado {
     

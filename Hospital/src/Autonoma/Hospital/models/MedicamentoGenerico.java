@@ -5,6 +5,7 @@ package Autonoma.Hospital.models;
  * 
  * @version 1.0
  * @author Samuel David López Sarabia
+ * @author Abraham Velásquez
  */
 public class MedicamentoGenerico extends Medicamento {
 

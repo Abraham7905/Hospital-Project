@@ -8,6 +8,7 @@ import java.util.Date;
 * 
 * @version 1.0
 * @author Samuel David López Sarabia
+* @author Abraham Velásquez
 */
 public class Inventario {
     

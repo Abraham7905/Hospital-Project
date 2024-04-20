@@ -7,6 +7,7 @@ import java.util.ArrayList;
  * 
  * @version 1.0
  * @author Samuel David López Sarabia
+ * @author Abraham Velásquez
  */
 public class Venta {
     

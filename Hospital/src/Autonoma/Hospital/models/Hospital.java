@@ -1,5 +1,7 @@
 package Autonoma.Hospital.models;
 
+import Autonoma.Hospital.exceptions.ErrorMedicinaException;
+import Autonoma.Hospital.exceptions.ErrorPacienteSanoException;
 import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.ImageIcon;
@@ -10,6 +12,7 @@ import javax.swing.ImageIcon;
  * Además, mantiene listas de citas, medicamentos, ventas y empleados asociados.
  * 
  * @author Samuel David López Sarabia
+ * @author Abraham Velásquez
  */
 public class Hospital {
     private String nombre; // Nombre del hospital
@@ -539,6 +542,28 @@ public class Hospital {
        if (index >= 0 && index < empleados.size()) {
            empleados.remove(index);
        }
+    }
+    
+    /**
+     * Se encarga de curar al paciente a traves de la cita
+     * 
+     * @param cita La cita en la cual esta registrado el cliente
+     * @param idVenta El id de la venta para la cita
+     * @param medicamento El medicamento con el que se va a curar el paciente
+     * @param enfermedad La enfermedad que va a curar el medico
+     * @return El mensaje con el resultado
+     */
+    public String curarPaciente(Cita cita, String idVenta, Medicamento medicamento, Enfermedad enfermedad){
+        try {
+            cita.curarPaciente(idVenta, medicamento, enfermedad);
+            return "El paciente se ha curado de esta enfermedad";
+        }
+        catch (ErrorMedicinaException e) {
+            return e.getMessage();
+        }
+        catch (ErrorPacienteSanoException e) {
+            return e.getMessage();
+        }
     }
     
 }

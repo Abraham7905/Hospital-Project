@@ -6,6 +6,7 @@ package Autonoma.Hospital.models;
  * Calcula el precio de venta del medicamento basado en un porcentaje adicional del costo.
  * 
  * @author Samuel David López Sarabia
+ * @author Abraham Velásquez
  * @version 1.0
  */
 public class MedicamentoMarca extends Medicamento {
