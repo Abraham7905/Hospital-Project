@@ -1,10 +1,9 @@
 package Autonoma.Hospital.models;
 
+
 import Autonoma.Hospital.exceptions.ErrorMedicinaException;
 import Autonoma.Hospital.exceptions.ErrorPacienteSanoException;
 import java.util.ArrayList;
-
-
 
 /**
  * Representa un paciente del hospital.

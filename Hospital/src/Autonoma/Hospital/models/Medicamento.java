@@ -1,4 +1,5 @@
 package Autonoma.Hospital.models;
+
 /**
  * Representa un medicamento.
  * 

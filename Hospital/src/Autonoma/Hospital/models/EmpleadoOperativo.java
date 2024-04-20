@@ -11,46 +11,37 @@ public class EmpleadoOperativo extends Empleado {
     
     private String areaTrabajo;
 
-    /**
-     * Crea un nuevo empleado operativo con el identificador, nombre, edad, salario base y área de trabajo especificados.
-     * 
-     * @param id El identificador del empleado.
-     * @param nombre El nombre del empleado.
-     * @param edad La edad del empleado.
-     * @param salarioBase El salario base del empleado.
-     * @param areaTrabajo El área de trabajo del empleado operativo.
-     */
     public EmpleadoOperativo(String id, String nombre, int edad, double salarioBase, String areaTrabajo) {
         super(id, nombre, edad, salarioBase);
         this.areaTrabajo = areaTrabajo;
     }
 
     /**
-     * Calcula el salario del empleado operativo.
-     * El salario se calcula sumando un 20% al salario base.
-     * 
-     * @param salarioBase El salario base del empleado.
-     * @return El salario total del empleado operativo.
-     */
+    * Calcula el salario del empleado operativo.
+    * El salario se calcula sumando un 20% al salario base.
+    * 
+    * @param salarioBase El salario base del empleado.
+    * @return El salario total del empleado operativo.
+    */
     @Override
     public double calcularSalario(double salarioBase) {
         return salarioBase + (salarioBase * 0.2);
     }
 
     /**
-     * Obtiene el área de trabajo del empleado operativo.
-     * 
-     * @return El área de trabajo del empleado operativo.
-     */
+    * Obtiene el área de trabajo del empleado operativo.
+    * 
+    * @return El área de trabajo del empleado operativo.
+    */
     public String getAreaTrabajo() {
         return areaTrabajo;
     }
 
     /**
-     * Establece el área de trabajo del empleado operativo.
-     * 
-     * @param areaTrabajo El nuevo área de trabajo del empleado operativo.
-     */
+    * Establece el área de trabajo del empleado operativo.
+    * 
+    * @param areaTrabajo El nuevo área de trabajo del empleado operativo.
+    */
     public void setAreaTrabajo(String areaTrabajo) {
         this.areaTrabajo = areaTrabajo;
     }
