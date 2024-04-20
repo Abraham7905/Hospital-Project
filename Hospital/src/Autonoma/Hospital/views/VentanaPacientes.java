@@ -13,6 +13,7 @@ public class VentanaPacientes extends javax.swing.JDialog {
     public VentanaPacientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

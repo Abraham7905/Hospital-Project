@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package Autonoma.Hospital.views;
 
 /**
@@ -228,7 +225,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_farmaciabtnActionPerformed
 
     private void empleadosbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_empleadosbtnActionPerformed
-        // TODO add your handling code here:
+        VentanaEmpleados ven = new VentanaEmpleados(this, true);
+        ven.setVisible(true);
     }//GEN-LAST:event_empleadosbtnActionPerformed
 
     private void registrarcitabtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarcitabtnActionPerformed
